@@ -267,6 +267,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.42"
 
+"@babel/plugin-syntax-typescript@7.0.0-beta.42":
+  version "7.0.0-beta.42"
+  resolved "http://registry.npmjs.org/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.0.0-beta.42.tgz#ffc42945ca15e5ab369de6b9f5d9324499c623cf"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.42"
+
 "@babel/plugin-transform-arrow-functions@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/plugin-transform-arrow-functions/-/plugin-transform-arrow-functions-7.0.0-beta.42.tgz#b918eb8760c38d6503a1a9858fa073786b60ab2b"
@@ -482,6 +488,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.42"
 
+"@babel/plugin-transform-typescript@7.0.0-beta.42":
+  version "7.0.0-beta.42"
+  resolved "http://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.0.0-beta.42.tgz#e3a2d46014fd26e0729fd574b521fca4eb21144f"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.42"
+    "@babel/plugin-syntax-typescript" "7.0.0-beta.42"
+
 "@babel/plugin-transform-unicode-regex@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/plugin-transform-unicode-regex/-/plugin-transform-unicode-regex-7.0.0-beta.42.tgz#1e7bdcf678d9a9066d06e6d334ab41ca11ca00ad"
@@ -545,6 +558,13 @@
     "@babel/plugin-transform-react-jsx-self" "7.0.0-beta.42"
     "@babel/plugin-transform-react-jsx-source" "7.0.0-beta.42"
 
+"@babel/preset-typescript@7.0.0-beta.42":
+  version "7.0.0-beta.42"
+  resolved "http://registry.npmjs.org/@babel/preset-typescript/-/preset-typescript-7.0.0-beta.42.tgz#adb91d387a6eee7b45918de544d6c8fa122c2564"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.42"
+    "@babel/plugin-transform-typescript" "7.0.0-beta.42"
+
 "@babel/runtime@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/runtime/-/runtime-7.0.0-beta.42.tgz#352e40c92e0460d3e82f49bd7e79f6cda76f919f"
@@ -583,6 +603,36 @@
     esutils "^2.0.2"
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
+
+"@types/next@^2.4.7":
+  version "2.4.12"
+  resolved "https://registry.yarnpkg.com/@types/next/-/next-2.4.12.tgz#fb85497ca7d5be9a3f603c6642b77dca5de2cb6e"
+  dependencies:
+    "@types/node" "*"
+    "@types/react" "*"
+
+"@types/node@*":
+  version "10.9.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.4.tgz#0f4cb2dc7c1de6096055357f70179043c33e9897"
+
+"@types/prop-types@*":
+  version "15.5.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.5.tgz#17038dd322c2325f5da650a94d5f9974943625e3"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.0.36":
+  version "16.4.14"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.14.tgz#47c604c8e46ed674bbdf4aabf82b34b9041c6a04"
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@zeit/next-typescript@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@zeit/next-typescript/-/next-typescript-1.1.0.tgz#57a45c85c336fee8d71c1bd966195565016932b2"
+  dependencies:
+    "@babel/preset-typescript" "7.0.0-beta.42"
 
 abbrev@1:
   version "1.1.1"
@@ -1233,6 +1283,10 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
+
+csstype@^2.2.0:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.6.tgz#2ae1db2319642d8b80a668d2d025c6196071e788"
 
 cyclist@~0.2.2:
   version "0.2.2"
