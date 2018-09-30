@@ -1,6 +1,6 @@
 const withTypescript = require('@zeit/next-typescript')
 
-module.exports = Object.assign({}, {
+module.exports = withTypescript({}, {
   webpack: config => {
     // Fixes npm packages that depend on `fs` module
     config.node = {
@@ -9,4 +9,4 @@ module.exports = Object.assign({}, {
 
     return config
   }
-}, withTypescript())
+})

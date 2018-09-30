@@ -9,7 +9,7 @@ const Home = () => (
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
+      <h1 className="title">Let's share your Product! Π</h1>
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
@@ -30,10 +30,10 @@ const Home = () => (
             </p>
           </a>
         </Link>
-        <Link href="https://github.com/segmentio/create-next-app">
+        <Link prefetch href="/blog">
           <a className="card">
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
+            <h3>Blog &rarr;</h3>
+            <p>Blog page</p>
           </a>
         </Link>
       </div>

@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
+  { href: '/signin', label: 'Sign in' },
+  { href: '/signup', label: 'Sign Up' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -13,7 +14,10 @@ const Nav = () => (
     <ul>
       <li>
         <Link prefetch href="/">
-          <a>Home</a>
+          <a>
+            <img className="logo" src="../static/logo.jpg">
+            </img>
+          </a>
         </Link>
       </li>
       <ul>
@@ -34,23 +38,32 @@ const Nav = () => (
           Helvetica, sans-serif;
       }
       nav {
+        display: grid;
         text-align: center;
+        border-bottom: solid 1px;
+        border-color: #dedede;
       }
       ul {
         display: flex;
         justify-content: space-between;
+        margin: 0 5% 0 5%;
       }
       nav > ul {
         padding: 4px 16px;
       }
       li {
         display: flex;
-        padding: 6px 8px;
+        padding: 0px 8px;
       }
       a {
         color: #067df7;
         text-decoration: none;
         font-size: 13px;
+      }
+      .logo {
+        align-self: flex-start;
+        height: 48px;
+        object-fit: contain;
       }
     `}</style>
   </nav>
