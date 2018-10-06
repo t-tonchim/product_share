@@ -31,6 +31,7 @@ gem 'pry-rails'
 group :development, :test do
   gem 'pry-byebug'
   gem 'dotenv-rails', require: 'dotenv/rails-now'
+  gem 'rails-env-credentials'
 end
 
 group :development do

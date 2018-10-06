@@ -39,3 +39,6 @@ front/dist
 front/.next
 # testing
 /coverage
+
+# Ignore master key for decrypting credentials and more.
+/config/master-development.key
