@@ -29,6 +29,7 @@ gem 'pry'
 gem 'pry-rails'
 
 group :development, :test do
+  gem 'rubocop'
   gem 'pry-byebug'
   gem 'dotenv-rails', require: 'dotenv/rails-now'
   gem 'rails-env-credentials'
